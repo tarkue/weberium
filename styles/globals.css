@@ -1,0 +1,88 @@
+:root {
+    --border-radius-xs: 18px;
+    --border-radius-s:  24px;
+    --border-radius-m:  36px;
+    --border-radius-x:  48px;
+    --border-radius-l:  72px;
+
+    --content-width: calc(100% - 72px*2);
+    --max-width-content: 1136px;
+
+    --margin: 72px;
+    --padding-scroll-header: 24px;
+    --padding-button: 24px;
+    --card-padding: 48px;
+
+    --svg-size-s: 28px;
+    --svg-size-m: 32px;
+
+    --small-gap: 12px;
+    --gap: 24px;
+    --big-gap: 48px;
+
+    --accent: #000;
+    --secondary: #F6F6F6;
+    --primary: white;
+    --body-color: #000000;
+    --card-color: #141414;
+
+    --opacity: .3;
+
+    --transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+a { color: inherit }
+button { background-color: inherit }
+
+svg *[fill] { fill: currentColor }
+svg *[stroke] { stroke: currentColor }
+
+html {
+    -webkit-text-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    height: 100dvh;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--body-color);
+    color: var(--primary);
+
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0; 
+}
+
+input, button {
+    border: none;
+    outline: none;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    font-family: inherit;
+}
+
+section {
+    padding-top: 120px;
+}
+
+.containerSection {
+    max-width: var(--max-width-content);
+    width: var(--content-width);
+    margin: 0 auto;
+}

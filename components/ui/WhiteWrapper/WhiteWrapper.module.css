@@ -1,0 +1,19 @@
+.WhiteWrapper {
+    padding: var(--margin) 0;
+    width: 100%;
+
+    background: var(--primary);
+    border-radius: var(--border-radius-l);
+
+    margin-top: 120px;
+}
+
+.WhiteWrapper > div {
+    max-width: var(--max-width-content);
+    width: var(--content-width);
+
+    margin: 0 auto;
+    
+    color: var(--accent);
+
+}

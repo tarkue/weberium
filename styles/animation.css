@@ -1,0 +1,8 @@
+.titleLetter {
+    width: max-content;
+    display: inline-block;
+    transform: translateY(1em);
+    transition: var(--transition);
+}
+
+    

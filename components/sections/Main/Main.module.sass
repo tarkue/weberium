@@ -1,0 +1,66 @@
+.Main
+    padding-top: 180px
+    padding-bottom: 24px
+    > h1
+        position: relative
+        z-index: 2
+
+        margin-top: -100px
+
+        text-transform: uppercase
+        letter-spacing: -7.68px
+
+        > span
+            overflow-y: hidden
+            height: 1em
+            display: block
+
+.Content
+    position: relative
+    z-index: 2
+
+    overflow: hidden
+
+    margin: 0 auto
+    margin-top: var(--big-gap)
+    width: var(--content-width)
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    transform: translateY(100px)
+    opacity: 0
+    transition: var(--transition)
+
+.Info 
+    display: flex
+    align-items: center
+    gap: var(--small-gap)
+
+    opacity: var(--opacity)
+
+    > p 
+        width: 180px
+
+        line-height: 100%
+        font-size: 16px
+.Split 
+    width: 1px
+    height: 44px
+
+    background: var(--primary)
+    
+.ButtonList 
+    display: flex
+    gap: var(--small-gap)
+
+.Image
+    position: relative
+    z-index: 1
+    width: 200%
+
+
+.ActiveContent 
+    transform: translateY(0)
+    opacity: 1

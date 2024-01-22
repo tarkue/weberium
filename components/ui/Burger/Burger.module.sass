@@ -1,0 +1,34 @@
+.Burger 
+    cursor: pointer
+    &:hover:not(.Active)
+        div:last-child
+            width: 40px
+            opacity: 1
+            
+    div 
+        transition: var(--transition)
+        transform-origin: bottom center
+        height: 3px
+        background: var(--primary)
+
+        &:first-child     
+            margin-bottom: 3px
+            width: 40px
+        
+        &:last-child
+            float: right
+            width: 24px
+
+            opacity: var(--opacity)
+
+.Active 
+    transform: translate(-10px, -1px)
+    div 
+        &:first-child
+            transform: rotate(-45deg) translateY(4px)
+            margin: 0
+            width: 20px
+        &:last-child
+            transform: rotate(45deg) 
+            opacity: 1
+            width: 20px

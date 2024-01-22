@@ -1,0 +1,30 @@
+.Header 
+    position: fixed
+    z-index: 3
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    margin: auto
+    padding-top: var(--margin)
+    padding-bottom: var(--padding-scroll-header)
+    transition: var(--transition)
+    
+    > div 
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        max-width: var(--max-width-content)
+        width: var(--content-width)
+
+.Scroll
+    padding-top: var(--padding-scroll-header)
+    background: rgba(0,0,0,.21)
+    backdrop-filter: blur(18px)
+    -webkit-backdrop-filter: blur(18px)
