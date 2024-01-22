@@ -25,6 +25,7 @@ export default function Footer() {
     ]
     return (
         <section className="containerSection">
+            <h2 className={s.Title}>Напиши<br/>нам</h2>
             <div className={s.FooterCard}>
                 <div>
                     <div>

@@ -1,4 +1,3 @@
-import Case from '@/components/sections/Case/Case';
 import Footer from '@/components/sections/Footer/Footer';
 import dynamic from 'next/dynamic';
 import localFont from 'next/font/local'
@@ -23,6 +22,9 @@ const Header = dynamic(() => import('@/components/Header/Header'), {
 })
 const Main = dynamic(() => import('@/components/sections/Main/Main'), { 
   loading: () => <p>loading</p>,
+})
+const Case = dynamic(() => import('@/components/sections/Case/Case'), {
+  loading: () => <p>loading</p>
 })
 
 export default function Home() {

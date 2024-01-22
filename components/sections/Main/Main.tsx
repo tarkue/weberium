@@ -18,7 +18,7 @@ export default function Main() {
 
     useLenis(({ scroll }) => {
         if (imageRef.current && scroll < window.innerHeight)
-            imageRef.current.style.transform = `translateX(calc(-20% + (-${scroll*0.5}px))`;
+            imageRef.current.style.transform = `translateX(calc(-30% + (-${scroll*0.5}px))`;
     })
     useEffect(() => {
         if (titleContainerRef.current) {
