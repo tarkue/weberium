@@ -1,8 +1,12 @@
 .titleLetter {
     width: max-content;
     display: inline-block;
-    transform: translateY(1em);
+    transform: translateY(1.2em);
     transition: var(--transition);
 }
 
-    
+h1 > span, h2 > span, h3 > span {
+    overflow-y: hidden;
+    height: 1em;
+    display: block;
+}

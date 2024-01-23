@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import s from "./Button.module.sass"
 
-import { buttonProps, buttonTheme } from "./types"
+import { IButtonProps, buttonTheme } from "./types"
 
-export default function Button(props: buttonProps) {
+export default function Button(props: IButtonProps) {
     const [theme, setTheme] = useState<string>()
 
     useEffect(() => {

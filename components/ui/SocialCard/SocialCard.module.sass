@@ -8,15 +8,16 @@
     border-radius: var(--border-radius-s)
 
     text-decoration: none
+   
+    > div 
+        transition: var(--transition)
+        &:hover
+            opacity: 0.8
+        > div
+            display: flex
+            justify-content: space-between
 
-    transition: var(--transition)
-    &:hover
-        opacity: 0.8
-    > div
-        display: flex
-        justify-content: space-between
-
-        margin-bottom: var(--gap)
+            margin-bottom: var(--gap)
 
 
 .Circle 

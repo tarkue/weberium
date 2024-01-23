@@ -5,7 +5,7 @@ enum buttonTheme {
     black,
     optionary
 }
-type buttonProps = {
+interface IButtonProps {
     text?: string,
     icon?: any,
     onClick: MouseEventHandler<HTMLButtonElement>,
@@ -15,4 +15,5 @@ type buttonProps = {
 export {
     buttonTheme
 }
-export type { buttonProps }
+export type { IButtonProps }
+

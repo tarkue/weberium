@@ -1,7 +1,7 @@
 .Main
     padding-top: 180px
     padding-bottom: 24px
-    > h1
+    > div > h1
         position: relative
         z-index: 2
 
@@ -9,11 +9,6 @@
 
         text-transform: uppercase
         letter-spacing: -7.68px
-
-        > span
-            overflow-y: hidden
-            height: 1em
-            display: block
 
 .Content
     position: relative
@@ -55,14 +50,15 @@
     display: flex
     gap: var(--small-gap)
 
-.Image
-    position: relative
-    z-index: 1
-
-    width: calc(1.5 * 100dvw)
-    height: auto
-
 
 .ActiveContent 
     transform: translateY(0)
     opacity: 1
+
+@media (max-height: 1080px) 
+    .Main
+        padding-top: 140px
+
+@media (max-height: 720px) 
+    .Main
+        padding-top: 120px

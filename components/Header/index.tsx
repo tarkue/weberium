@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import s from "./Header.module.sass"
-import Burger from "../ui/Burger/Burger";
+import Burger from "../ui/Burger";
 import { useLenis } from "@studio-freight/react-lenis";
 import { useRef } from "react";
 

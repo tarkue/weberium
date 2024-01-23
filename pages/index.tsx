@@ -1,31 +1,16 @@
-import Footer from '@/components/sections/Footer/Footer';
+import Main from '@/components/sections/Main';
+import Case from '@/components/sections/Case'
+import Footer from '@/components/sections/Footer';
+
 import dynamic from 'next/dynamic';
-import localFont from 'next/font/local'
+import mont from '@/font/mont';
 
-const mont = localFont({ 
-  src: [
-    {
-      path: "../assets/fonts/MontRegular.woff2",
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: "../assets/fonts/MontSemiBold.woff2",
-      weight: '600',
-      style: 'normal',
-    }
-  ],
-});
 
-const Header = dynamic(() => import('@/components/Header/Header'), { 
+
+const Header = dynamic(() => import('@/components/Header'), { 
   loading: () => <p>loading</p>,
 })
-const Main = dynamic(() => import('@/components/sections/Main/Main'), { 
-  loading: () => <p>loading</p>,
-})
-const Case = dynamic(() => import('@/components/sections/Case/Case'), {
-  loading: () => <p>loading</p>
-})
+
 
 export default function Home() {
   return (
