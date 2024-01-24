@@ -1,4 +1,53 @@
 .Title
     text-transform: uppercase
-    margin-bottom: var(--big-gap)
-    
+
+.SearchMembers 
+    padding: var(--big-gap) var(--margin)
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    border-radius: var(--border-radius-m)
+    text-decoration: none
+
+    border: var(--border)
+    border-color: var(--secondary)
+
+    background: url("/searchBack.png") 
+    background-size: 100% 100%
+    background-position: center
+    transition: var(--transition)
+
+    > h3, > div
+        transition: var(--transition) 
+
+    h3
+        max-width: 260px
+
+
+    &:hover
+        background-size: 110% 110%
+
+        > h3, > div
+            opacity: .8
+            
+
+.Circle
+    display: flex
+    align-items: center
+    justify-content: center
+
+    width: 80px
+    height: 80px
+
+    background: var(--accent)
+    border-radius: 50%
+    > svg 
+        width: var(--svg-size-m)
+        height: var(--svg-size-m)
+        
+        path
+            fill: var(--primary)
+
+

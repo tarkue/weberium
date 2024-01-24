@@ -6,7 +6,7 @@ import Footer from '@/components/sections/Footer';
 
 import mont from '@/font/mont';
 import Excellence from '@/components/sections/Excellence';
-import Team from '@/components/sections/Team/Team';
+import Team from '@/components/sections/Team';
 
 
 

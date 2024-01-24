@@ -1,3 +1,5 @@
+import { IAvatar } from "../Avatar/types"
+
 interface ITeamContentData {
     id: number
     avatar: IAvatar
@@ -6,4 +8,8 @@ interface ITeamContentData {
 
 interface ITeamContentProps {
     teams: ITeamContentData[]
+}
+
+export type {
+    ITeamContentData, ITeamContentProps
 }
