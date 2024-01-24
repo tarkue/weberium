@@ -1,15 +1,13 @@
+
+import Header from '@/components/Header';
 import Main from '@/components/sections/Main';
 import Case from '@/components/sections/Case'
 import Footer from '@/components/sections/Footer';
 
-import dynamic from 'next/dynamic';
 import mont from '@/font/mont';
+import Excellence from '@/components/sections/Excellence';
+import Team from '@/components/sections/Team/Team';
 
-
-
-const Header = dynamic(() => import('@/components/Header'), { 
-  loading: () => <p>loading</p>,
-})
 
 
 export default function Home() {
@@ -20,6 +18,8 @@ export default function Home() {
       <Header />
       <Main />
       <Case />
+      <Excellence />
+      <Team />
       <Footer/>
     </main>
   );

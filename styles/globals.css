@@ -1,9 +1,12 @@
 :root {
+    --border-radius-xxs: 12px;
     --border-radius-xs: 18px;
     --border-radius-s:  24px;
     --border-radius-m:  36px;
     --border-radius-x:  48px;
     --border-radius-l:  72px;
+
+    --border: 2px solid #fff;
 
     --content-width: calc(100% - 72px*2);
     --max-width-content: 1136px;
@@ -18,10 +21,12 @@
     --svg-size-s: 28px;
     --svg-size-m: 32px;
 
+    --very-small-gap: 8px;
     --small-gap: 12px;
     --gap: 24px;
     --big-gap: 48px;
 
+    --green: #00ED18;
     --accent: #000;
     --secondary: #F6F6F6;
     --primary: white;

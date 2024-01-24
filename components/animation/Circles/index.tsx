@@ -11,7 +11,7 @@ export default function Circles() {
             imageRef.current.style.transform = `translateX(calc(-30% + (-${scroll*0.5}px))`;
     })
     return (
-        <div>
+        <div className={s.ImageWrapper}>
             <Image 
                 src={"/circles.svg"}
                 width={2200}

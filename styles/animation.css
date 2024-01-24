@@ -6,6 +6,7 @@
 }
 
 h1 > span, h2 > span, h3 > span {
+    padding-top: 10px;
     overflow-y: hidden;
     height: 1em;
     display: block;
