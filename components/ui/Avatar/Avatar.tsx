@@ -6,7 +6,8 @@ export default function Avatar({photo, profession, name}: IAvatar) {
             <Image 
                 alt={name}
                 src={photo}
-                height={}
+                height={235}
+                width={235}
             /> 
         </div>
     )
