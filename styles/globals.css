@@ -18,6 +18,7 @@
     --case-card-padding: 24px;
     --case-card-padding-top: 36px;
 
+    --svg-size-xs: 16px;
     --svg-size-s: 28px;
     --svg-size-m: 32px;
 
@@ -92,4 +93,9 @@ section {
     max-width: var(--max-width-content);
     width: var(--content-width);
     margin: 0 auto;
+}
+
+svg {
+    object-fit: cover;
+    object-position: center;
 }

@@ -31,8 +31,26 @@
     background: var(--primary)
     border-radius: 50%
 
-    > svg > path
+    > svg
         width: var(--svg-size-s)
         height: var(--svg-size-s)
-
+        
+    > svg > path
         fill: var(--card-color)
+
+
+@media (max-width: 980px) 
+    .SocialCard > div > h3
+        font-size: 32px
+
+@media (max-width: 750px) 
+    .Circle 
+        width: 48px
+        height: 48px
+        > svg
+            width: var(--svg-size-xs)
+            height: var(--svg-size-xs)
+
+    .SocialCard > div > h3
+        font-size: 20px
+        letter-spacing: 0

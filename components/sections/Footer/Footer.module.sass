@@ -3,6 +3,8 @@
     width: 100%
 
     display: flex
+    flex-direction: row
+
     gap: var(--gap)
 
 .Title
@@ -42,3 +44,16 @@
 
     font-size: 20px
     opacity: var(--opacity)
+
+@media (max-width: 800px) 
+    .FooterCard > div
+        flex-direction: column
+        gap: 36px
+
+        div
+            width: 100%
+            h3
+                margin-bottom: var(--small-gap)
+        
+        > button
+            width: 100%

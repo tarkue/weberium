@@ -1,13 +1,16 @@
 .Button 
+    cursor: pointer
+
     display: flex
     justify-content: space-between
     align-items: center
-
 
     min-width: 80px
     height: 80px
     padding: 0 var(--padding-button)
     border-radius: var(--border-radius-xs)
+
+    transition: var(--transition)
     
     > p
         font-size: 24px
@@ -23,16 +26,30 @@
     color: var(--accent)
     fill: var(--accent)
 
+    &:hover
+        color: lighten(#000, 10)
+        fill: lighten(#000, 10)
+        background:  darken(#fff, 10)
 
 .Black
     background: var(--accent)
     color: var(--primary)
     fill: var(--primary)
 
+    &:hover
+        color: darken(#fff, 10)
+        fill: darken(#fff, 10)
+        background:  lighten(#000, 10)
+
 .Optionary
     background: var(--card-color)
     color: var(--primary)
     fill: var(--primary)
+
+    &:hover
+        color: darken(#fff, 2)
+        fill: darken(#fff, 2)
+        background:  darken(#141414, 2)
 
 .Center 
     text-align: center

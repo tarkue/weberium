@@ -19,3 +19,22 @@ h3 {
 p {
     letter-spacing: -1.24px;
 }
+
+@media (max-width: 1170px) {
+    h1 {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 1015px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 922px) {
+    h1 {
+        font-size: 78px;
+    }
+}
+    

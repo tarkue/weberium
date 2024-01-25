@@ -32,6 +32,7 @@ export default function Team() {
             <Link 
                 className={s.SearchMembers}
                 href={"/"}
+                data-aos="fade-up"
                
             >
                 <h3>
