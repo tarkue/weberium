@@ -38,7 +38,7 @@ export default function Main() {
                 </h1>
             </TitleWrapper>
             :
-            <TitleWrapper>
+            <TitleWrapper setTextLength={setTextLength}>
                 <h1 className="containerSection">
                     <span>студия</span>
                     <span>верстки</span>
