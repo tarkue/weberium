@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     AOS.init({
       duration: 500, 
       easing: "ease-out-cubic", 
-      anchorPlacement: "center-center"
+      anchorPlacement: "center-top"
     })
   }, [])
 
