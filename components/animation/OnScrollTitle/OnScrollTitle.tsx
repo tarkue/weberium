@@ -13,7 +13,8 @@ export default function OnScrollTitle({ children, className }: IOnScrollTitle) {
 
     useMutationObserver(titleRef, (e) => {
         const el: any = e[0].target;
-        setTriggerTitle(el.classList.contains("aos-animate"))
+        if (el.classList)
+            setTriggerTitle(el.classList.contains("aos-animate"))
     })
 
     return (

@@ -26,27 +26,26 @@ export default function Main() {
                 36 * (textLength + 4)
             )
     }, [contentRef, textLength])
-
-    const Text = () => useWindowSize() > 730 ?
-        <>
-            <span>студия верстки</span>
-            <span>для ваших</span> 
-            <span>проектов</span>
-        </> :
-        <>
-            <span>студия</span>
-            <span>верстки</span>
-            <span>для</span>
-            <span>ваших</span> 
-            <span>проектов</span>
-        </>
-
+    
     return (
         <section className={s.Main}>
             <Circles />
             <TitleWrapper setTextLength={setTextLength}>
                 <h1 className="containerSection">
-                    <Text />
+                    {useWindowSize() > 730 ?
+                        <>
+                            <span>студия верстки</span>
+                            <span>для ваших</span> 
+                            <span>проектов</span>
+                        </> :
+                        <>
+                            <span>студия</span>
+                            <span>верстки</span>
+                            <span>для</span>
+                            <span>ваших</span> 
+                            <span>проектов</span>
+                        </>
+                    }
                 </h1>
             </TitleWrapper>
 

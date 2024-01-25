@@ -38,3 +38,23 @@ p {
     }
 }
     
+@media (max-width: 450px) {
+    h2 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 410px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 58px;
+    }
+}
