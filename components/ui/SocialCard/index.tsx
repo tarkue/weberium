@@ -1,20 +1,31 @@
 import s from "./SocialCard.module.sass"
-import IconLink from "@/assets/icons/link.svg"
+import Image from "next/image"
 import Link from "next/link"
+import { socialCardProps } from "./types"
 
-type socialCardProps = {
-    icon: any, 
-    text: string,
-    href: string,
-}
 
+const socialPath = ["/social/vk.svg", "/social/telegram.svg"] 
 export default function SocialCard(props: socialCardProps) {
+    
     return (
         <Link href={props.href} className={s.SocialCard} data-aos="fade-up">
             <div>
                 <div>
-                    <div className={s.Circle}><props.icon /></div>
-                    <IconLink />
+                    <div className={s.Circle}>
+                        <Image 
+                            src={socialPath[props.icon]} 
+                            alt={props.text} 
+                            width={32}
+                            height={32}
+                        />
+                    </div>
+                    <Image 
+                            src={"/social/link.svg"} 
+                            alt={props.text} 
+                            width={32}
+                            height={32}
+                            className={s.IconArrow}
+                        />
                 </div>
                 <h3 dangerouslySetInnerHTML={{ __html: props.text}} />
             </div>

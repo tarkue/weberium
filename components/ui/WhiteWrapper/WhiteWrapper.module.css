@@ -17,3 +17,12 @@
     color: var(--accent);
 
 }
+
+@media (max-width: 620px) {
+    .WhiteWrapper {
+        margin-top: 60px;
+
+        padding-bottom: 20px;
+        border-radius: var(--border-radius-m);
+    }
+}

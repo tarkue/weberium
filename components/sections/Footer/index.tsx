@@ -1,25 +1,24 @@
 import SocialCard from "@/components/ui/SocialCard";
 import s from "./Footer.module.sass"
 
-import IconVK from "@/assets/icons/vk.svg";
-import IconTelegram from "@/assets/icons/telegram.svg";
 import IconArrow from "@/assets/icons/arrow.svg"
 
 import Button from "@/components/ui/Button";
 import { buttonTheme } from "@/components/ui/Button/types";
-import TitleWrapper from "@/components/animation/TitleWrapper";
+
 import OnScrollTitle from "@/components/animation/OnScrollTitle/OnScrollTitle";
+import { socialMedia } from "@/components/ui/SocialCard/types";
 
 const footerData = [
     {
         id: 1,
-        icon: IconVK,
+        icon: socialMedia.VK,
         text: "Группа ВК <br/> с новостями" ,
         href:  "https://google.com"
     },
     {
         id: 2,
-        icon: IconTelegram,
+        icon: socialMedia.Telegram,
         text: "Телеграмм канальчик" ,
         href: "https://google.com"
     }

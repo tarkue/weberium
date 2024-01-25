@@ -8,6 +8,7 @@ import IconPlay from "@/assets/icons/play.svg"
 import { useEffect, useRef, useState } from "react"
 import TitleWrapper from "@/components/animation/TitleWrapper"
 import dynamic from "next/dynamic"
+import useWindowSize from "@/hooks/useWidth"
 
 const Circles = dynamic(
     () => import("@/components/animation/Circles"), {
@@ -26,14 +27,26 @@ export default function Main() {
             )
     }, [contentRef, textLength])
 
+    const Text = () => useWindowSize() > 730 ?
+        <>
+            <span>студия верстки</span>
+            <span>для ваших</span> 
+            <span>проектов</span>
+        </> :
+        <>
+            <span>студия</span>
+            <span>верстки</span>
+            <span>для</span>
+            <span>ваших</span> 
+            <span>проектов</span>
+        </>
+
     return (
         <section className={s.Main}>
             <Circles />
             <TitleWrapper setTextLength={setTextLength}>
                 <h1 className="containerSection">
-                    <span>студия верстки</span>
-                    <span>для ваших</span> 
-                    <span>проектов</span>
+                    <Text />
                 </h1>
             </TitleWrapper>
 

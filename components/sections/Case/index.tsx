@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 import TitleWrapper from "@/components/animation/TitleWrapper";
 import { useMutationObserver } from "@/hooks/useMutationObserver";
 import OnScrollTitle from "@/components/animation/OnScrollTitle/OnScrollTitle";
+import useWindowSize from "@/hooks/useWidth";
 
 const CaseList = dynamic(
     () => import("@/components/animation/CaseList"), {
@@ -39,11 +40,21 @@ const cases = [
 
 export default function Case() {
     
+    const Text = () => useWindowSize() > 730 ?
+        <>
+            <span>взгляни на</span>
+            <span>наши кейсы</span>
+        </> :
+        <>
+            <span>взгляни</span>
+            <span>на наши</span>
+            <span>кейсы</span>
+        </>
+        
     return (
         <WhiteWrapper>
             <OnScrollTitle className={s.Title}>
-                <span>взгляни на</span>
-                <span>наши кейсы</span>
+                <Text />
             </OnScrollTitle>
             <CaseList className={s.CaseList} cases={cases}/>
             <div className={s.ButtonWrapper} data-aos="fade-up" data-aos-once="true">
