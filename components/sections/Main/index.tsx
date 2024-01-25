@@ -30,28 +30,27 @@ export default function Main() {
     return (
         <section className={s.Main}>
             <Circles />
-            <TitleWrapper setTextLength={setTextLength}>
-                <h1 className="containerSection">
-                    {useWindowSize() > 730 ?
-                        <>
-                            <span>студия верстки</span>
-                            <span>для ваших</span> 
-                            <span>проектов</span>
-                        </> :
-                        <>
-                            <span>студия</span>
-                            <span>верстки</span>
-                            <span>для</span>
-                            <span>ваших</span> 
-                            <span>проектов</span>
-                        </>
-                    }
+            {useWindowSize() > 730 ? <TitleWrapper setTextLength={setTextLength}>
+                <h1 className="containerSection">                       
+                    <span>студия верстки</span>
+                    <span>для ваших</span> 
+                    <span>проектов</span>
                 </h1>
             </TitleWrapper>
-
+            :
+            <TitleWrapper>
+                <h1 className="containerSection">
+                    <span>студия</span>
+                    <span>верстки</span>
+                    <span>для</span>
+                    <span>ваших</span> 
+                    <span>проектов</span>
+                </h1>
+            </TitleWrapper>
+            }
             <div className={`containerSection ${s.Content}`} ref={contentRef}>
                 <div className={s.Info} >
-                    <p>Уже более 6 лет <br/> создаём решения <br/> для бизнес-партнёров</p>
+                    <p>Уже более 0 лет <br/> создаём решения <br/> для бизнес-партнёров</p>
                     <div className={s.Split}></div>
                     <p>Верстаем сайты <br/> разной сложности по <br/> вашим предпочтениям</p>
                 </div>
