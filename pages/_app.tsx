@@ -21,9 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <ReactLenis options={{
-        autoResize: true
-      }} root>
+      <ReactLenis root>
         <Component {...pageProps} />
       </ReactLenis>
     </AnimatePresence>
