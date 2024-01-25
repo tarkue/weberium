@@ -31,29 +31,30 @@ export default function Footer() {
                 <span>напиши</span>
                 <span>нам</span>
             </OnScrollTitle>
-            
-            <div className={s.FooterCard} data-aos="fade-up">
-                <div>
+            <div data-aos="fade-up">
+                <div className={s.FooterCard}>
                     <div>
-                        <h3>На сайте</h3>
-                        <p>Перейдите к диалогу на сайте, менеджер ответит в течение 10-15 минут</p>
+                        <div>
+                            <h3>На сайте</h3>
+                            <p>Перейдите к диалогу на сайте, менеджер ответит в течение 10-15 минут</p>
+                        </div>
+                        <Button 
+                            theme={buttonTheme.white}
+                            onClick={() => {}}
+                            text="Сделать заказ"
+                            icon={IconArrow}
+                        />
                     </div>
-                    <Button 
-                        theme={buttonTheme.white}
-                        onClick={() => {}}
-                        text="Сделать заказ"
-                        icon={IconArrow}
-                    />
                 </div>
-            </div>
-            <div className={s.SocialCardList}>
-                {footerData.map((data) => 
-                <SocialCard 
-                    icon={data.icon}
-                    text={data.text} 
-                    href={data.href}
-                    key={data.id}
-                />)}
+                <div className={s.SocialCardList}>
+                    {footerData.map((data) => 
+                    <SocialCard 
+                        icon={data.icon}
+                        text={data.text} 
+                        href={data.href}
+                        key={data.id}
+                    />)}
+                </div>
             </div>
             <p className={s.Copyright}>
                 © copyright by Weberium

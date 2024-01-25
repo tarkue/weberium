@@ -8,7 +8,9 @@ const socialPath = ["/social/vk.svg", "/social/telegram.svg"]
 export default function SocialCard(props: socialCardProps) {
     
     return (
-        <Link href={props.href} className={s.SocialCard} data-aos="fade-up">
+        <Link 
+            href={props.href} className={s.SocialCard} 
+        >
             <div>
                 <div>
                     <div className={s.Circle}>
