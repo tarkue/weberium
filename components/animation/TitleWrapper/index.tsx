@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { ITitleWrapperProps } from "./types";
 
 
-export default function TitleWrapper({ children, setTextLength, trigger }: ITitleWrapperProps) {    
+export default function TitleWrapper(
+  { children, setTextLength, trigger, globalTrigger }: ITitleWrapperProps
+) {    
   const titleContainerRef = useRef<HTMLDivElement>(null)
   const [textElements, setTextElements] = useState<HTMLSpanElement[]>()
-  
+
   useEffect(() => {
       if (textElements && (trigger === undefined || trigger == true)) {    
         textElements.map((el, i) => {
@@ -40,7 +42,7 @@ export default function TitleWrapper({ children, setTextLength, trigger }: ITitl
       setTextElements(shuffled)
       titleContainerRef.current.style.visibility = "visible"
     }
-  }, [setTextLength])
+  }, [setTextLength, globalTrigger])
 
   return (
       <div 

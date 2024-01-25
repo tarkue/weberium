@@ -6,7 +6,7 @@ import IconArrow from "@/assets/icons/arrow.svg"
 import Button from "@/components/ui/Button";
 import { buttonTheme } from "@/components/ui/Button/types";
 
-import OnScrollTitle from "@/components/animation/OnScrollTitle/OnScrollTitle";
+import OnScrollTitle from "@/components/animation/OnScrollTitle";
 import { socialMedia } from "@/components/ui/SocialCard/types";
 
 const footerData = [
@@ -26,7 +26,7 @@ const footerData = [
 
 export default function Footer() {
     return (
-        <section className="containerSection">
+        <section className="containerSection" id="contact">
             <OnScrollTitle className={s.Title}>
                 <span>напиши</span>
                 <span>нам</span>

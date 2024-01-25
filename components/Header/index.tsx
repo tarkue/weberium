@@ -4,8 +4,9 @@ import s from "./Header.module.sass"
 import Burger from "../ui/Burger";
 import { useLenis } from "@studio-freight/react-lenis";
 import { useRef } from "react";
+import { IBurgerProps } from "./types";
 
-export default function Header() {
+export default function Header({activeMenu, setActiveMenu}: IBurgerProps) {
   const headerRef = useRef<HTMLHeadingElement>(null)
 
   useLenis(({ scroll }) => {
@@ -26,7 +27,7 @@ export default function Header() {
             alt="Вебериум"
             priority={true}
         />
-        <Burger />
+        <Burger activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
       </div>
     </header>
   )

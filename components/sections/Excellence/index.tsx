@@ -40,7 +40,7 @@ const excellenceList: IExcellenceCard[] = [
 
 export default function Excellence() {
     return (
-        <section className="containerSection">
+        <section className="containerSection" id="excellence">
             <div className={s.Content}>
                 {excellenceList.map(
                     (excellence) => <ExcellenceCard 

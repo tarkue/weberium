@@ -1,0 +1,66 @@
+.BurgerItem
+    cursor: pointer
+
+    display: flex
+    flex-direction: column
+
+    gap: 18px
+
+    width: 0
+    .Circle, p
+        transition: var(--transition)
+        opacity: 0
+        transform: scale(0)
+        
+    transition: var(--transition)
+    transition-duration: 1s
+
+    &:hover
+        .Circle
+            transform: scale(1.2)
+
+        .Line
+            transform: scaleY(2)
+    > div 
+        width: 100%
+
+        &:nth-child(1)
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        > p
+            font-size: 36px
+            height: 32px
+
+.Circle
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: 32px
+    height: 32px
+
+    background: var(--primary)
+
+    border-radius: 50%
+    transition: var(--transition)
+
+    > svg > path
+        fill: var(--accent)
+.Line
+    transition: var(--transition)
+    height: 1px
+    display: block
+    
+    background: var(--primary)
+
+.Animate 
+    width: 100%
+    
+    .Circle, p
+        transition: var(--transition)
+        opacity: 1
+        transform: scale(1)
+        
+

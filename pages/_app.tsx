@@ -15,12 +15,15 @@ export default function App({ Component, pageProps }: AppProps) {
     AOS.init({
       duration: 500, 
       easing: "ease-out-cubic", 
+      anchorPlacement: "center-center"
     })
   }, [])
 
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <ReactLenis root>
+      <ReactLenis options={{
+        autoResize: true
+      }} root>
         <Component {...pageProps} />
       </ReactLenis>
     </AnimatePresence>

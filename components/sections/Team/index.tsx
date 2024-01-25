@@ -1,4 +1,4 @@
-import OnScrollTitle from "@/components/animation/OnScrollTitle/OnScrollTitle";
+import OnScrollTitle from "@/components/animation/OnScrollTitle";
 import WhiteWrapper from "@/components/ui/WhiteWrapper";
 
 import s from "./Team.module.sass"
@@ -23,7 +23,7 @@ const teams: ITeamContentData[] = [
 
 export default function Team() {
     return (
-        <WhiteWrapper>
+        <WhiteWrapper id="team">
             <OnScrollTitle className={s.Title}>
                 <span>наша</span>
                 <span>команда</span>

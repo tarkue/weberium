@@ -1,0 +1,34 @@
+.Modal 
+    display: flex
+    justify-content: center
+    align-items: center
+
+    z-index: 5
+    position: absolute
+    left: 0
+
+    width: 100%
+    height: 100dvh
+
+    background: var(--accent)
+    transition: var(--transition)
+
+.Container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 36px
+
+    max-width: var(--max-width-content)
+    width: var(--content-width)
+
+.Active 
+    visibility: visible
+    opacity: 1
+
+.Deactive
+    visibility: hidden
+    opacity: 0
+
+.Overflow 
+    overflow: hidden

@@ -2,14 +2,12 @@ import WhiteWrapper from "@/components/ui/WhiteWrapper";
 import s from "./Case.module.sass"
 import Button from "@/components/ui/Button";
 import { buttonTheme } from "@/components/ui/Button/types";
-import CaseCard from "@/components/ui/CaseCard";
-import { LegacyRef, useEffect, useRef, useState } from "react";
-import { useLenis } from "@studio-freight/react-lenis";
 import dynamic from "next/dynamic";
-import TitleWrapper from "@/components/animation/TitleWrapper";
-import { useMutationObserver } from "@/hooks/useMutationObserver";
-import OnScrollTitle from "@/components/animation/OnScrollTitle/OnScrollTitle";
+
+import OnScrollTitle from "@/components/animation/OnScrollTitle";
 import useWindowSize from "@/hooks/useWidth";
+import { useState } from "react";
+import TextReplacer from "@/components/TextReplacer/TextReplacer";
 
 const CaseList = dynamic(
     () => import("@/components/animation/CaseList"), {
@@ -38,23 +36,33 @@ const cases = [
     }
 ]
 
+const DesktopText = () => (
+    <>
+        <span>взгляни на</span>
+        <span>наши кейсы</span>
+    </>
+)
+
+const MobileText = () => (
+    <>
+        <span>взгляни</span>
+        <span>на наши</span>
+        <span>кейсы</span>
+    </>
+)
+
+
 export default function Case() {
-    
-    const Text = () => useWindowSize() > 730 ?
-        <>
-            <span>взгляни на</span>
-            <span>наши кейсы</span>
-        </> :
-        <>
-            <span>взгляни</span>
-            <span>на наши</span>
-            <span>кейсы</span>
-        </>
-        
+    const [globalTrigger, setGlobalTrigger] = useState<boolean>(false)
+
     return (
-        <WhiteWrapper>
-            <OnScrollTitle className={s.Title}>
-                <Text />
+        <WhiteWrapper id="cases">
+            <OnScrollTitle className={s.Title} globalTrigger={globalTrigger}>
+                <TextReplacer
+                    MobileText={MobileText}
+                    DesktopText={DesktopText}
+                    setGlobalTrigger={setGlobalTrigger}
+                />
             </OnScrollTitle>
             <CaseList className={s.CaseList} cases={cases}/>
             <div className={s.ButtonWrapper} data-aos="fade-up" data-aos-once="true">
