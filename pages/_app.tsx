@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
       AOS.init({
         duration: 600, 
-        easing: "ease-out-cubic", 
-        anchorPlacement: "top-center"
+        easing: "ease-out-cubic",
+        anchorPlacement: "bottom-center"
       })
   }, [])
 

@@ -65,7 +65,11 @@ export default function Case() {
                 />
             </OnScrollTitle>
             <CaseList className={s.CaseList} cases={cases}/>
-            <div className={s.ButtonWrapper} data-aos="fade-up" data-aos-once="true">
+            <div 
+                className={s.ButtonWrapper} 
+                data-aos="fade-up" 
+                data-aos-once="true"
+            >
                 <Button
                     onClick={() => {}}
                     theme={buttonTheme.black}
