@@ -24,7 +24,7 @@ export default function Home() {
           content="Студия вёрстки ваших проектов. Разрабатываем сайты, работаем с дизайнерами и совместно приходим к идеалу." 
         />
         <meta name="theme-color" content="#000"/>
-        <meta name="keywords" content="студия, вёрстка, студия вёрстки, дизайн, студия дизайна, сверстать сайт, заказать сайт, сайт, купить сайт, разработка сайта, сколько стоит сайт" />
+        <meta name="keywords" content="вебериум, студия, вёрстка, студия вёрстки, дизайн, студия дизайна, сверстать сайт, заказать сайт, сайт, купить сайт, разработка сайта, сколько стоит сайт" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="@summary_large_image" />
         <meta name="twitter:title" content="Вебериум | Студия вёрстки" />

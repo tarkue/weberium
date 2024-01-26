@@ -16,7 +16,7 @@ export default function Circles() {
                 src={"/circles.svg"}
                 width={2200}
                 height={185}
-                alt=""
+                alt="circles"
                 className={s.Image}
                 ref={imageRef}
                 priority={true}
