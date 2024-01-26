@@ -13,7 +13,7 @@ export default function ExcellenceCard({tagText, title, content} : IExcellenceCa
         >{content.text}</h1>
 
     return (
-        <div className={s.ExcellenceCard} data-aos="fade-up" data-aos-anchor-placement="center-center">
+        <div className={s.ExcellenceCard} data-aos="fade-up" data-aos-anchor-placement="bottom-center">
             <p>{ tagText }</p>
             <div>
                 { Content }
