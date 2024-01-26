@@ -11,3 +11,9 @@ h1 > span, h2 > span, h3 > span {
     height: 1em;
     display: block;
 }
+
+@media (max-width: 730px) {
+    h1 > span, h2 > span, h3 > span {
+        height: 0.8em;
+    }
+}
