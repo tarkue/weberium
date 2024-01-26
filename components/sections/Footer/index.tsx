@@ -31,7 +31,7 @@ export default function Footer() {
                 <span>напиши</span>
                 <span>нам</span>
             </OnScrollTitle>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div className={s.FooterCard}>
                     <div>
                         <div>
