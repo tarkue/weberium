@@ -33,6 +33,7 @@ export default function Team() {
                 className={s.SearchMembers}
                 href={"/"}
                 data-aos="fade-up"
+                data-aos-anchor-placement="bottom-center"
             >
                 <h3>
                 Набираем в команду
