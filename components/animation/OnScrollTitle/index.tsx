@@ -24,7 +24,6 @@ export default function OnScrollTitle({ children, className, globalTrigger}: IOn
                 <h2 
                     className={className} 
                     data-aos 
-                    data-aos-anchor-placement="center-center"
                     ref={titleRef}>
                     {children}
                 </h2>
