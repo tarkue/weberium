@@ -12,11 +12,11 @@ import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    AOS.init({
-      duration: 500, 
-      easing: "ease-out-cubic", 
-      anchorPlacement: "center-center"
-    })
+      AOS.init({
+        duration: 600, 
+        easing: "ease-out-cubic", 
+        anchorPlacement: "top-center"
+      })
   }, [])
 
   return (

@@ -14,7 +14,8 @@
     "framer-motion": "^10.18.0",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
