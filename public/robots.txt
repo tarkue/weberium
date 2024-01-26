@@ -1,3 +1,5 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+sitemap: https://xn--90abjbpy0az.xn--p1ai/sitemap.xml
