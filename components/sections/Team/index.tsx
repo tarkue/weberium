@@ -31,7 +31,8 @@ export default function Team() {
             <TeamContent teams={teams}/>
             <Link 
                 className={s.SearchMembers}
-                href={"/"}
+                target="_blank"
+                href={"https://forms.yandex.ru/cloud/65b3e8833e9d08740bcb3ff0/"}
                 data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom"
             >

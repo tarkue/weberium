@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useLenis } from "@studio-freight/react-lenis";
 import { IBurgerItem } from "../ui/BurgerItem/types";
 import BurgerItem from "../ui/BurgerItem";
+import ButtonList from "../ui/ButtonList";
 
 const burgerItems: IBurgerItem[] = [
     {
@@ -71,6 +72,9 @@ export default function BurgerModal({active, setActive}: IBurgerModalProps) {
                     />
                  )}
             </section>
+            <div className={s.ButtonListWrapper}>
+                <ButtonList />
+            </div>
         </div>
     )
 }

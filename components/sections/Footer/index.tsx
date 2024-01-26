@@ -7,19 +7,20 @@ import { buttonTheme } from "@/components/ui/Button/types";
 
 import OnScrollTitle from "@/components/animation/OnScrollTitle";
 import { socialMedia } from "@/components/ui/SocialCard/types";
+import Link from "next/link";
 
 const footerData = [
     {
         id: 1,
         icon: socialMedia.VK,
         text: "Группа ВК <br/> с новостями" ,
-        href:  "https://google.com"
+        href:  "https://vk.com/weberium"
     },
     {
         id: 2,
         icon: socialMedia.Telegram,
         text: "Телеграмм канальчик" ,
-        href: "https://google.com"
+        href: "https://t.me/weberium_ru"
     }
 ]
 
@@ -37,12 +38,17 @@ export default function Footer() {
                             <h3>На сайте</h3>
                             <p>Перейдите к диалогу на сайте, менеджер ответит в течение 10-15 минут</p>
                         </div>
-                        <Button 
-                            theme={buttonTheme.white}
-                            onClick={() => {}}
-                            text="Сделать заказ"
-                            icon={IconArrow}
-                        />
+                        <Link 
+                            href={"https://vk.com/uslugi-224262469?screen=group"}
+                            target="_blank"
+                        >
+                            <Button 
+                                theme={buttonTheme.white}
+                                onClick={() => {}}
+                                text="Сделать заказ"
+                                icon={IconArrow}
+                            />
+                        </Link>
                     </div>
                 </div>
                 <div className={s.SocialCardList}>

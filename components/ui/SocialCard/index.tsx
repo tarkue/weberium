@@ -10,6 +10,7 @@ export default function SocialCard(props: socialCardProps) {
     return (
         <Link 
             href={props.href} className={s.SocialCard} 
+            target="_blank"
         >
             <div>
                 <div>

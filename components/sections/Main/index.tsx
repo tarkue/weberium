@@ -1,15 +1,12 @@
 import Button from "@/components/ui/Button"
 import s from "./Main.module.sass"
-import { buttonTheme } from "@/components/ui/Button/types"
-
-import IconArrow from "@/assets/icons/arrow.svg"
-import IconPlay from "@/assets/icons/play.svg"
 
 import { useEffect, useRef, useState } from "react"
 import TitleWrapper from "@/components/animation/TitleWrapper"
 import dynamic from "next/dynamic"
 
 import TextReplacer from "@/components/TextReplacer/TextReplacer"
+import ButtonList from "@/components/ui/ButtonList"
 
 const Circles = dynamic(
     () => import("@/components/animation/Circles"), {
@@ -70,19 +67,7 @@ export default function Main() {
                     <div className={s.Split}></div>
                     <p>Верстаем сайты <br/> разной сложности по <br/> вашим предпочтениям</p>
                 </div>
-                <div className={s.ButtonList}>
-                    <Button 
-                        onClick={()=> {}}
-                        theme={buttonTheme.optionary}
-                        icon={IconPlay}
-                    />
-                    <Button 
-                        onClick={()=> {}}
-                        theme={buttonTheme.white}
-                        text="Сделать заказ"
-                        icon={IconArrow}
-                    />
-                </div>
+                <ButtonList />
             </div>
         </section>
     )

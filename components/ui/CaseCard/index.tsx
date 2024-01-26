@@ -11,7 +11,7 @@ export default function CaseCard({ text, name, link}: ICaseCardProps) {
         <div className={s.CaseCard} data-aos-anchor-placement="top-center">
             <h3>{ name }</h3>
             <p>{ text }</p>
-            <Link href={link}>
+            <Link href={link} target="_blank">
                 <Button 
                     onClick={() => {}}
                     text="посетить сайт"
