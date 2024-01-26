@@ -8,7 +8,7 @@ import { ICaseCardProps } from "./types";
 
 export default function CaseCard({ text, name, link}: ICaseCardProps) {
     return (
-        <div className={s.CaseCard} data-aos-anchor-placement="top-center">
+        <div className={s.CaseCard}>
             <h3>{ name }</h3>
             <p>{ text }</p>
             <Link href={link} target="_blank">
