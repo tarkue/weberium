@@ -12,9 +12,9 @@
     > div 
         transition: var(--transition)
         &:hover
-            opacity: 0.8
-
-            .Circle 
+            .IconArrow 
+                transform: scale(1.2)
+                opacity: 1
         > div
             display: flex
             justify-content: space-between
@@ -38,6 +38,7 @@
         height: var(--svg-size-s)
         
 .IconArrow
+    transition: var(--transition)
     opacity: var(--opacity)
 
 @media (max-width: 980px) 

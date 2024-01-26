@@ -23,6 +23,7 @@ export default function Home() {
           name="description" 
           content="Студия вёрстки ваших проектов. Разрабатываем сайты, работаем с дизайнерами и совместно приходим к идеалу." 
         />
+        <meta name="yandex-verification" content="be53ed9b299e84ba" />
         <meta name="theme-color" content="#000"/>
         <meta name="keywords" content="вебериум, студия, вёрстка, студия вёрстки, дизайн, студия дизайна, сверстать сайт, заказать сайт, сайт, купить сайт, разработка сайта, сколько стоит сайт" />
         <meta property="og:type" content="article" />
