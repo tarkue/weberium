@@ -3,15 +3,7 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'sun3-18.userapi.com',
-        port: '',
-      },
-    ],
-  },
+
   webpack: function (config, options) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg'),
