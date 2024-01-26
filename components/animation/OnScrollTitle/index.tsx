@@ -21,7 +21,10 @@ export default function OnScrollTitle({ children, className, globalTrigger}: IOn
 
     return (
         <TitleWrapper trigger={triggerTitle} globalTrigger={globalTrigger}>
-                <h2 className={className} data-aos ref={titleRef}>
+                <h2 
+                    className={className} 
+                    data-aos 
+                    ref={titleRef}>
                     {children}
                 </h2>
         </TitleWrapper>

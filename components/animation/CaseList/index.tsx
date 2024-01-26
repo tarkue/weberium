@@ -21,6 +21,7 @@ export default function CaseList({cases, className}: ICaseListProps) {
   return (
     <div className={className} ref={caseListRef}>
       {cases.map((caseCard) => <CaseCard 
+        data-aos-once="true"
         name={caseCard.name}
         text={caseCard.text}
         link={caseCard.link}
