@@ -10,8 +10,6 @@ import Team from '@/components/sections/Team';
 import BurgerModal from '@/components/BurgerModal';
 import { useState } from 'react';
 
-
-
 export default function Home() {
   const [activeMenu, setActiveMenu] = useState(false)
 

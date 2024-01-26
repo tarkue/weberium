@@ -5,7 +5,6 @@ import { buttonTheme } from "@/components/ui/Button/types";
 import dynamic from "next/dynamic";
 
 import OnScrollTitle from "@/components/animation/OnScrollTitle";
-import useWindowSize from "@/hooks/useWidth";
 import { useState } from "react";
 import TextReplacer from "@/components/TextReplacer/TextReplacer";
 

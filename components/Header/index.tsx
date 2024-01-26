@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import s from "./Header.module.sass"
 import Burger from "../ui/Burger";

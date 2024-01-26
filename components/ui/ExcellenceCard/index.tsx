@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { IExcellenceCardProps } from "./types";
 import s from "./ExcellenceCard.module.sass"
 
-
 export default function ExcellenceCard({tagText, title, content} : IExcellenceCardProps) {
     const Content: ReactNode = content.icons ? 
         content.icons.map((Icon, i) => <div key={i}><Icon /></div>)

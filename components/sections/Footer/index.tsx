@@ -2,7 +2,6 @@ import SocialCard from "@/components/ui/SocialCard";
 import s from "./Footer.module.sass"
 
 import IconArrow from "@/assets/icons/arrow.svg"
-
 import Button from "@/components/ui/Button";
 import { buttonTheme } from "@/components/ui/Button/types";
 

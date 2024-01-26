@@ -3,8 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { socialCardProps } from "./types"
 
-
-const socialPath = ["/social/vk.svg", "/social/telegram.svg"] 
+const socialPath = ["/social/vk.svg", "/social/telegram.svg"]
+ 
 export default function SocialCard(props: socialCardProps) {
     
     return (

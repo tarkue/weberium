@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ITitleWrapperProps } from "./types";
 
-
 export default function TitleWrapper(
   { children, setTextLength, trigger, globalTrigger }: ITitleWrapperProps
 ) {    
