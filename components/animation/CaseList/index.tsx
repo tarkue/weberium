@@ -19,9 +19,8 @@ export default function CaseList({cases, className}: ICaseListProps) {
 }, [caseListRef])
 
   return (
-    <div className={className} ref={caseListRef}>
+    <div className={className} ref={caseListRef} data-aos="fade-up">
       {cases.map((caseCard) => <CaseCard 
-        data-aos-once="true"
         name={caseCard.name}
         text={caseCard.text}
         link={caseCard.link}
