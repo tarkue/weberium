@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       AOS.init({
         duration: 600, 
         easing: "ease-out-cubic",
+        once: true
       })
   }, [])
 
