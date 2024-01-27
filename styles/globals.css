@@ -106,6 +106,10 @@ svg {
     object-position: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 620px) {
     :root {
         --margin: 48px;
