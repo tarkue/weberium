@@ -10,7 +10,7 @@ export default function TitleWrapper(
   useEffect(() => {
       if (textElements && (trigger === undefined || trigger == true)) {    
         textElements.map((el, i) => {
-            setTimeout(() => el.style.transform = "translateY(0)", 33*(i+1)*2)
+            setTimeout(() => el.style.transform = "none", 55*(i+1))
         })
       }
   }, [textElements, trigger])
