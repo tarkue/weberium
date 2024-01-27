@@ -1,15 +1,16 @@
 .titleLetter {
     width: max-content;
     display: inline-block;
-    transform: translateY(1.2em);
+    transform: translateY(1.2em) rotate(45deg);
     transition: var(--transition);
 }
 
 h1 > span, h2 > span, h3 > span {
     padding-top: 10px;
-    overflow-y: hidden;
+    overflow: hidden;
     height: 1em;
     display: block;
+
 }
 
 @media (max-width: 730px) {
